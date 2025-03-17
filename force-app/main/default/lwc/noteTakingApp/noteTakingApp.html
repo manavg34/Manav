@@ -1,0 +1,11 @@
+<template>
+    <lightning-card variant="Narrow" title="Create Notes" icon-name="standard:note">
+        <div class="slds-p-around_medium">
+            <lightning-input class="x-large slds-p-left_small slds-p-right_small slds-p-bottom_small" label="Title" value={title} onchange={handleTitleChange}></lightning-input>
+            <lightning-input-rich-text class="x-large slds-p-around_small" placeholder="Type Your Content Here......." value={content} onchange={handleContentChange}></lightning-input-rich-text>
+            <div class="slds-align_absolute-center">
+                <lightning-button label="Insert Note" variant="brand" onclick={handleInsertNote}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
